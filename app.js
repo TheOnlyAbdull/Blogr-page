@@ -32,18 +32,4 @@ navBtn.addEventListener('click', () => {
   nav.classList.toggle('show-nav');
   navLink.classList.toggle('display-nav');
   logLink.classList.toggle('display-nav');
-/*
-//getting current scr
-const currentSrc = imgSrc.getAttribute("src");
-
-//check for current src and change to the other
-if (currentSrc === "images\icon-hamburger.svg") {
-  imgSrc.setAttribute("src","images\icon-close.svg");
-}else{
-  imgSrc.setAttribute("src", "images\icon-hamburger.svg");
-}
-*/
 });
-
-
-

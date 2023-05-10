@@ -294,12 +294,12 @@ button.btn-002:hover{
     .display-order {
         display: flex;
         flex-direction: column-reverse; /*Change the order of items to reverse column*/
-      }
+    }
       .order-1 {
         order: 2; /* Set the order of image to be 2 */
-      }
+    }
       .order-2 {
         order: 1; /* Set the order of content to be 1 */
-      }
+    }
 
 }
