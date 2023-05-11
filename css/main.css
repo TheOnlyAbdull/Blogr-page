@@ -11,7 +11,8 @@
 
 /* ---------------Section One--------------- */
 .sec-one{
-    background-image:linear-gradient(hsl(13, 100%, 72%) ,hsl(353, 100%, 62%)) ;
+    /* background-image: url(../images/bg-pattern-intro-desktop.svg); */
+    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -154,6 +155,8 @@ button.btn-002:hover{
 .sec-two{
     color:hsl(207, 13%, 34%) ;
     width: 100%;
+    margin-bottom: 15rem;
+    overflow: hidden;
 }
 .div-h2 h2{
     font-size: 2.5rem;
@@ -191,7 +194,45 @@ button.btn-002:hover{
     top: -7rem;
 }
 
-
+/* ---------------Section Three--------------- */
+section.sec-three{
+    background:hsl(237, 17%, 21%);
+    background-image: url("../images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size:auto;
+    width: 100%;
+    height: 62vh;
+    font-family: 'Overpass', sans-serif; 
+    color: hsl(0, 0%, 100%);   
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+.phone-img img{
+    margin: auto;
+    margin-top: -5rem;
+    display: block;
+}
+.main-003{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62vh;
+}
+.content-003{
+    padding: 5% 8rem 5% 0;
+}
+.content-003 .p-one{
+    font-size: 2.3rem;
+    font-weight: 300;
+    letter-spacing: 1.7;
+    margin-bottom: 2rem;
+}
+.content-003 .p-two{
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: hsl(240, 2%, 79%);
+}
 
 
 
@@ -206,6 +247,9 @@ button.btn-002:hover{
 
 /* #################600px screen size######################## */
 @media screen and (max-width : 600px){
+    .span-1-of-2{
+        width: 100%;
+    }
     .menu-bar{
         display: block;
     }    
@@ -301,5 +345,26 @@ button.btn-002:hover{
       .order-2 {
         order: 1; /* Set the order of content to be 1 */
     }
+    .sec-two{
+        margin-bottom: 12rem;
+    }
+    section.sec-three{
+        height: auto;
+    }
+    .phone-img img{
+        margin: auto;
+        margin-top: -10rem;
+        width: 100%;
+        display: block;
+    }
+    .main-003{
+        height: auto;
+    }
+    .content-003{
+        padding: 1rem;
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+
 
 }

@@ -33,3 +33,14 @@ navBtn.addEventListener('click', () => {
   navLink.classList.toggle('display-nav');
   logLink.classList.toggle('display-nav');
 });
+
+// 0--------------------------------
+window.addEventListener("resize", function() {
+  var myImage = document.getElementById("my-image");
+
+  if (window.innerWidth < 600) {
+    myImage.src = "./images/small-image.jpg";
+  } else {
+    myImage.src = "./images/large-image.jpg";
+  }
+});
