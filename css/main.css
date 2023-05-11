@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+    /* overflow-x: hidden; */
 }
 
 /* ---------------Section One--------------- */
@@ -156,7 +157,7 @@ button.btn-002:hover{
     color:hsl(207, 13%, 34%) ;
     width: 100%;
     margin-bottom: 15rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .div-h2 h2{
     font-size: 2.5rem;
@@ -171,14 +172,16 @@ button.btn-002:hover{
     padding-left: 9rem;
     margin-top: 5.5rem;
 }
-.content-002 h3{
+.content-002 h3,
+.content-004 h3{
     font-size: 1.5rem;
     font-family: 'Overpass', sans-serif;
     font-weight: 600;
     letter-spacing: 1.8;
     margin-bottom: 2rem;
 }
-.content-002 p{
+.content-002 p,
+.content-004 p{
     margin-bottom: 4rem;
     font-family: 'Overpass', sans-serif;
     letter-spacing: 2;
@@ -187,11 +190,19 @@ button.btn-002:hover{
 }
 .img-main{
     position: relative;
+    /* overflow-x: hidden; */
+}
+.img-content{
+    width: 100%;
+    /* overflow-x: hidden; */
 }
 
 .img-content img{
     position: absolute;
     top: -7rem;
+    /* right: -20%; */
+    width: fit-content;
+    /* overflow-x: hidden; */
 }
 
 /* ---------------Section Three--------------- */
@@ -205,6 +216,7 @@ section.sec-three{
     font-family: 'Overpass', sans-serif; 
     color: hsl(0, 0%, 100%);   
     border-top-right-radius: 5rem;
+    margin-bottom: 10rem;
     border-bottom-left-radius: 5rem;
 }
 .phone-img img{
@@ -234,6 +246,29 @@ section.sec-three{
     color: hsl(240, 2%, 79%);
 }
 
+/* ---------------Section four--------------- */
+
+.sec-four{
+    color:hsl(207, 13%, 34%) ;
+    width: 100%;
+    margin-bottom: 15rem;
+}
+.main-004{
+    width: 100%;
+    /* padding-left: 2rem; */
+    margin-top: 11rem;
+}
+.content-004{
+    padding-right: 10rem;
+}
+.main-img-004{
+    position: relative;
+}
+.laptop-img img{
+    position: absolute;
+    left: -42%;
+    display: block;
+}
 
 
 
@@ -350,6 +385,7 @@ section.sec-three{
     }
     section.sec-three{
         height: auto;
+        margin-bottom: 3rem;
     }
     .phone-img img{
         margin: auto;
@@ -365,6 +401,25 @@ section.sec-three{
         padding-bottom: 4rem;
         text-align: center;
     }
+    .laptop-img img{
+        position: unset;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0 1rem 1rem;
+    }
+    .sec-four{
+        margin-bottom: 1rem;
+    }
+    .main-004{
+        width: 100%;
+        /* padding-left: 2rem; */
+        margin-top: 2rem;
+    }    
+    .content-004{
+        padding: 1rem;
+        text-align: center;
+    }
+
 
 
 }
