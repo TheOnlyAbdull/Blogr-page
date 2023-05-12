@@ -40,11 +40,12 @@ nav.navigate{
     font-size: 16px;
     font-weight: bold;
 }
-ul{
+ul.nav-ul,.log-ul{
     display: flex;
     list-style: none;
 }
-li,a{
+.nav-ul li,
+.log-ul li, a{
     margin: 0 1rem;
     text-decoration: none;
     color: hsl(0, 0%, 100%);
@@ -270,6 +271,36 @@ section.sec-three{
     display: block;
 }
 
+/* ---------------Fotter Sction--------------- */
+.foot-sec{
+    background:hsl(240, 10%, 16%);
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 3rem;
+    padding-bottom:4rem;
+    border-top-right-radius: 5rem;
+}
+.foot-row{
+    width: 80%;
+    margin: 0 auto;
+}
+.foot-ul li{
+    color: hsl(240, 2%, 79%); ;
+    list-style: none;
+    font-size: 15px;
+    margin-bottom: .9rem;
+    cursor: pointer;
+}
+.foot-ul li:hover{
+    /* border-bottom: ; */
+    text-decoration: underline;
+}
+ul.foot-ul li.one-foot-ul{
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+}
+
 
 
 
@@ -282,7 +313,8 @@ section.sec-three{
 
 /* #################600px screen size######################## */
 @media screen and (max-width : 600px){
-    .span-1-of-2{
+    .span-1-of-2,
+    .span-3-of-12{
         width: 100%;
     }
     .menu-bar{
@@ -419,6 +451,26 @@ section.sec-three{
         padding: 1rem;
         text-align: center;
     }
+    .foot-sec{
+        padding-bottom: 2.5rem;
+    }
+
+    .foot-row{
+        text-align: center;
+    }
+    .foot-logo{
+        margin-bottom: 3rem;
+    }
+    ul.foot-ul li.one-foot-ul{
+        margin-bottom: 1.2rem;
+    }
+    .foot-ul{
+        margin-bottom: 2rem;
+    }
+    .foot-ul li{
+        margin-bottom: .9rem;
+    }
+
 
 
 
