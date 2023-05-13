@@ -157,8 +157,8 @@ button.btn-002:hover{
 .sec-two{
     color:hsl(207, 13%, 34%) ;
     width: 100%;
-    margin-bottom: 15rem;
-    /* overflow: hidden; */
+    margin-bottom: 4rem;
+    overflow: hidden;
 }
 .div-h2 h2{
     font-size: 2.5rem;
@@ -191,19 +191,19 @@ button.btn-002:hover{
 }
 .img-main{
     position: relative;
-    /* overflow-x: hidden; */
 }
 .img-content{
     width: 100%;
+    /* position: relative; */
     /* overflow-x: hidden; */
 }
 
 .img-content img{
-    position: absolute;
-    top: -7rem;
-    /* right: -20%; */
-    width: fit-content;
-    /* overflow-x: hidden; */
+    /* position: absolute; */
+    margin-top: -7rem;
+    /* left: 0; */
+    /* max-width: 100%; */
+    height: auto;
 }
 
 /* ---------------Section Three--------------- */
@@ -219,10 +219,15 @@ section.sec-three{
     border-top-right-radius: 5rem;
     margin-bottom: 10rem;
     border-bottom-left-radius: 5rem;
+    margin-bottom: 10rem;
+}
+.phone-img{
+    width: 100%;
 }
 .phone-img img{
     margin: auto;
     margin-top: -5rem;
+    max-width: 100%;
     display: block;
 }
 .main-003{
@@ -232,7 +237,7 @@ section.sec-three{
     height: 62vh;
 }
 .content-003{
-    padding: 5% 8rem 5% 0;
+    padding: 5% 15% 5% 0;
 }
 .content-003 .p-one{
     font-size: 2.3rem;
@@ -252,7 +257,7 @@ section.sec-three{
 .sec-four{
     color:hsl(207, 13%, 34%) ;
     width: 100%;
-    margin-bottom: 15rem;
+    margin-bottom: 6rem;
 }
 .main-004{
     width: 100%;
@@ -260,14 +265,23 @@ section.sec-three{
     margin-top: 11rem;
 }
 .content-004{
-    padding-right: 10rem;
+    padding-right: 15%;
+    padding-left: 3%;
 }
 .main-img-004{
     position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.laptop-img{
+    /* position: absolute; */
+    /* left: -42%; */
+    width: 100%;
+    display: block;
+    transform: scaleX(-1);
 }
 .laptop-img img{
-    position: absolute;
-    left: -42%;
+    /* width: 100%; */
     display: block;
 }
 
@@ -311,8 +325,8 @@ ul.foot-ul li.one-foot-ul{
 
 
 
-/* #################600px screen size######################## */
-@media screen and (max-width : 600px){
+/* #################767px screen size######################## */
+@media screen and (max-width : 767px){
     .span-1-of-2,
     .span-3-of-12{
         width: 100%;
@@ -470,8 +484,4 @@ ul.foot-ul li.one-foot-ul{
     .foot-ul li{
         margin-bottom: .9rem;
     }
-
-
-
-
 }
