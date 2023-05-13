@@ -350,7 +350,12 @@ ul.foot-ul li.one-foot-ul{
         /* background: hsl(0, 0%, 100%); */
     }
     /* to display nav */
-    ad 
+    nav.navigate.show-nav{
+        top: 20%;
+    }
+    nav .nav-ul.display-nav{
+        display: block;
+    }
     nav .log-ul.display-nav{
         display: block;
     }
